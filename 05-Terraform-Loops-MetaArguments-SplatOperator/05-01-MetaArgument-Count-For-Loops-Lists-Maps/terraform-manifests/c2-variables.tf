@@ -13,13 +13,6 @@ variable "instance_type" {
   default = "t3.micro"
 }
 
-# AWS EC2 Instance Key Pair
-variable "instance_keypair" {
-  description = "AWS EC2 Key Pair that need to be associated with EC2 Instance"
-  type = string
-  default = "terraform-key"
-}
-
 # AWS EC2 Instance Type - List
 variable "instance_type_list" {
   description = "EC2 Instance Type"
