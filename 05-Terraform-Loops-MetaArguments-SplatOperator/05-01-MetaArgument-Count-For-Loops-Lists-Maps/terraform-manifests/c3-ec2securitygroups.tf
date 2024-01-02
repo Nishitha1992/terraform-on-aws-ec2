@@ -1,6 +1,6 @@
 # Create Security Group - SSH Traffic
 resource "aws_security_group" "vpc-ssh" {
-  name        = "vpc-ssh"
+  name = "vpc-ssh"
   ingress {
     description = "Allow Port 22"
     from_port   = 22
