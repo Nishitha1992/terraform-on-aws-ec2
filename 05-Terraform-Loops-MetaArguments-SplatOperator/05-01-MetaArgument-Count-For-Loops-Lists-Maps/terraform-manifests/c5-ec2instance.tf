@@ -9,7 +9,6 @@ resource "aws_instance" "myec2vm" {
   count                  = 3
   tags = {
     "Name"     = "Count-Demo-${count.index}"
-    "location" = "hyd"
   }
 }
 
