@@ -8,7 +8,8 @@ resource "aws_instance" "myec2vm" {
   vpc_security_group_ids = [aws_security_group.vpc-ssh.id, aws_security_group.vpc-web.id]
   count                  = 3
   tags = {
-    "Name" = "Count-Demo-${count.index}"
+    "Name"     = "Count-Demo-${count.index}"
+    "location" = "hyd"
   }
 }
 
